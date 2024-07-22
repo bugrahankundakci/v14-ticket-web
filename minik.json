@@ -1,0 +1,51 @@
+{
+    "botSettings": {
+        "token": "MTIzODUwMTU0ODUwNjQ4MDY1MA.GNn_xJ.AMvvNps2RuBd5ygHcCPxDh0IlpXVjhJudV7V_4",
+        "ServerID": "1261737644358897766",
+        "clientID": "1238501548506480650",
+        "durum": "dnd",
+        "oynuyor": "Ananı Götten Sikme"
+    },
+
+
+    
+    "ticket": {
+        "kategori": {
+            "destekbug": "1264303435122081822",
+            "icproblemler": "1264303435122081822",
+            "baskaproblemler": "1264303435122081822",
+            "otherproblemler": "1264303435122081822"
+        },
+
+        "yetkili": {
+            "destekbug": "1264280114053517453",
+            "icproblemler": "1264280115794153476",
+            "baskaproblemler": "1264280116272435251",
+            "otherproblemler": "1264280115240767519",
+            "yonetim": "1264280115240767519",
+            "ticket": "1264280115240767519"
+        },
+        "transcriptsChannelId": "1263506660765470792",
+
+        "menuayarlari": {
+            "mesaj": " 'Ticket Açmak İçin Aşağıdan Kategori Seçiniz. \n\n```Şikayetleriniz,\nÖneri/İstekleriniz,\nYaşadığınız sorunlar hakkında buradan yardım alabilirsin!``` \n\n> __Gereksiz Yere Ticket Açanlara İşlem Uygulanacaktır.__' ",
+            "menuplaceholder": " Ticket Açmak İçin Kategori Seçiniz.",
+            "birseceneklabel": "Destek, Bug & Teknik Sorunlar",
+            "birsecenekemoji": "1264482776208506971",
+            "birsecenekaciklama": "Destek için ticket oluştur!",
+            "ikiseceneklabel": "Oyun içi sorunlar, Rol hataları",
+            "ikisecenekemoji": "1264482774434320455",
+            "ikisecenekaciklama": "IC / OOC Sorunlar için ticket oluştur!",
+            "ucseceneklabel": "Başka Bir Sorun Belirt.",
+            "ucsecenekemoji": "1264482777739300874",
+            "ucsecenekaciklama": "Başka bir sorununu kendini ifade ederek belirt.",
+            "dortseceneklabel": "Diğer Kategoriler",
+            "dortsecenekemoji": "1264482782994890763",
+            "dortsecenekaciklama": "Deneme",
+            "icmesaj": " ```> Eğer video kaydınız yoksa bir görsele veya sizin anlatımınıza göre işlem yapılamaz. \n > **Video kayıtı zorunludur!** \n > **Sorununuzu direkt belirtiniz.** \n > Yetkililerimiz sizinle kısa süre içerisinde ilgilenicektir.``` "
+        }
+    }
+
+
+
+}
