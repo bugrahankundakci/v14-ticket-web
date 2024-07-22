@@ -1,5 +1,5 @@
 const { ActivityType, Events } = require("discord.js");
-const minik = require('../../minik.json');
+const minik = require("../../minik.json");
 
 module.exports = {
     name: Events.ClientReady,
@@ -9,7 +9,6 @@ module.exports = {
         setPresence(client);
     },
 };
-
 
 function setPresence(client) {
     client.user.setPresence({

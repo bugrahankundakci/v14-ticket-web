@@ -7,8 +7,6 @@
         "oynuyor": "botun oynuyor olarak ne göstermesini istiyorsn buraya onu gir"
     },
 
-
-    
     "ticket": {
         "kategori": {
             "destekbug": "botun ticketleri hangi kategoride açmasını istiyorsan buraya o kategorinin id'sini gir",
@@ -45,7 +43,4 @@
             "icmesaj": " ```> Eğer video kaydınız yoksa bir görsele veya sizin anlatımınıza göre işlem yapılamaz. \n > **Video kayıtı zorunludur!** \n > **Sorununuzu direkt belirtiniz.** \n > Yetkililerimiz sizinle kısa süre içerisinde ilgilenicektir.``` "
         }
     }
-
-
-
 }
