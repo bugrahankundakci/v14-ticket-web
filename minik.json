@@ -1,31 +1,31 @@
 {
     "botSettings": {
-        "token": "MTIzODUwMTU0ODUwNjQ4MDY1MA.GNn_xJ.AMvvNps2RuBd5ygHcCPxDh0IlpXVjhJudV7V_4",
-        "ServerID": "1261737644358897766",
-        "clientID": "1238501548506480650",
-        "durum": "dnd",
-        "oynuyor": "Ananı Götten Sikme"
+        "token": "BOTUN TOKENİNİ BURAYA GİR",
+        "ServerID": "BOTU KULLANDIĞIN SUNUCUNUN ID'SINI BURAYA GIR",
+        "clientID": "BOTUN KENDISINI / CLIENT ID'YI BURAYA GIR",
+        "durum": "dnd-online-invisible-idle",
+        "oynuyor": "botun oynuyor olarak ne göstermesini istiyorsn buraya onu gir"
     },
 
 
     
     "ticket": {
         "kategori": {
-            "destekbug": "1264303435122081822",
-            "icproblemler": "1264303435122081822",
-            "baskaproblemler": "1264303435122081822",
-            "otherproblemler": "1264303435122081822"
+            "destekbug": "botun ticketleri hangi kategoride açmasını istiyorsan buraya o kategorinin id'sini gir",
+            "icproblemler": "botun ticketleri hangi kategoride açmasını istiyorsan buraya o kategorinin id'sini gir",
+            "baskaproblemler": "botun ticketleri hangi kategoride açmasını istiyorsan buraya o kategorinin id'sini gir",
+            "otherproblemler": "botun ticketleri hangi kategoride açmasını istiyorsan buraya o kategorinin id'sini gir"
         },
 
         "yetkili": {
-            "destekbug": "1264280114053517453",
-            "icproblemler": "1264280115794153476",
-            "baskaproblemler": "1264280116272435251",
-            "otherproblemler": "1264280115240767519",
-            "yonetim": "1264280115240767519",
-            "ticket": "1264280115240767519"
+            "destekbug": "ticketleri hangi yetkili görmesini istiyorsan onun rol id'sini buraya gir",
+            "icproblemler": "ticketleri hangi yetkili görmesini istiyorsan onun rol id'sini buraya gir",
+            "baskaproblemler": "ticketleri hangi yetkili görmesini istiyorsan onun rol id'sini buraya gir",
+            "otherproblemler": "ticketleri hangi yetkili görmesini istiyorsan onun rol id'sini buraya gir",
+            "yonetim": "ticketleri hangi yetkili görmesini istiyorsan onun rol id'sini buraya gir",
+            "ticket": "düz ticket yetkilisi rol id'sini giriceksin"
         },
-        "transcriptsChannelId": "1263506660765470792",
+        "transcriptsChannelId": "logları hangi kanala atacak?",
 
         "menuayarlari": {
             "mesaj": " 'Ticket Açmak İçin Aşağıdan Kategori Seçiniz. \n\n```Şikayetleriniz,\nÖneri/İstekleriniz,\nYaşadığınız sorunlar hakkında buradan yardım alabilirsin!``` \n\n> __Gereksiz Yere Ticket Açanlara İşlem Uygulanacaktır.__' ",
