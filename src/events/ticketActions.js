@@ -1,16 +1,28 @@
-const { Events, PermissionsBitField, ButtonBuilder, ButtonStyle, ActionRowBuilder } = require('discord.js');
-const minik = require('../../minik.json');
+const {
+    Events,
+    PermissionsBitField,
+    ButtonBuilder,
+    ButtonStyle,
+    ActionRowBuilder,
+} = require("discord.js");
+const minik = require("../../minik.json");
 
 module.exports = {
     name: Events.InteractionCreate,
     async execute(interaction) {
-        if (interaction.isStringSelectMenu() && interaction.customId === 'ticket-actions') {
+        if (
+            interaction.isStringSelectMenu() &&
+            interaction.customId === "ticket-actions"
+        ) {
             const selectedValue = interaction.values[0];
 
             switch (selectedValue) {
-                case 'kaydetkapat':
-                    await interaction.reply({ content: `<@${interaction.user.id}> Ticket kapanıyor...`, ephemeral: false });
-                    
+                case "kaydetkapat":
+                    await interaction.reply({
+                        content: `<@${interaction.user.id}> Ticket kapanıyor...`,
+                        ephemeral: false,
+                    });
+
                     await interaction.channel.permissionOverwrites.set([
                         {
                             id: interaction.guild.roles.everyone.id,
@@ -27,24 +39,27 @@ module.exports = {
                     ]);
 
                     const minikinbutonu = new ButtonBuilder()
-                        .setCustomId('ticketisil')
-                        .setLabel('Ticketi Sil')
-                        .setEmoji('1264482781069574185')
+                        .setCustomId("ticketisil")
+                        .setLabel("Ticketi Sil")
+                        .setEmoji("1264482781069574185")
                         .setStyle(ButtonStyle.Danger);
 
-                    const militaninactionu = new ActionRowBuilder()
-                        .addComponents(minikinbutonu);
+                    const militaninactionu =
+                        new ActionRowBuilder().addComponents(minikinbutonu);
 
                     await interaction.channel.send({
                         content: `<@${interaction.user.id}> Ticket silinsin mi?`,
-                        components: [militaninactionu]
+                        components: [militaninactionu],
                     });
 
                     break;
 
-                case 'bencozdum':
-                    await interaction.reply({ content: `<@${interaction.user.id}> Ticket kapanıyor...`, ephemeral: false });
-                    
+                case "bencozdum":
+                    await interaction.reply({
+                        content: `<@${interaction.user.id}> Ticket kapanıyor...`,
+                        ephemeral: false,
+                    });
+
                     await interaction.channel.permissionOverwrites.set([
                         {
                             id: interaction.guild.roles.everyone.id,
@@ -61,24 +76,27 @@ module.exports = {
                     ]);
 
                     const minikinbutonuu = new ButtonBuilder()
-                        .setCustomId('ticketisil')
-                        .setLabel('Ticketi Sil')
-                        .setEmoji('1264482781069574185')
+                        .setCustomId("ticketisil")
+                        .setLabel("Ticketi Sil")
+                        .setEmoji("1264482781069574185")
                         .setStyle(ButtonStyle.Danger);
 
-                    const militaninactionuu = new ActionRowBuilder()
-                        .addComponents(minikinbutonuu);
+                    const militaninactionuu =
+                        new ActionRowBuilder().addComponents(minikinbutonuu);
 
                     await interaction.channel.send({
                         content: `<@${interaction.user.id}> Ticket silinsin mi?`,
-                        components: [militaninactionuu]
+                        components: [militaninactionuu],
                     });
                     break;
 
                 default:
-                    await interaction.reply({ content: 'Geçersiz seçenek!', ephemeral: true });
+                    await interaction.reply({
+                        content: "Geçersiz seçenek!",
+                        ephemeral: true,
+                    });
                     break;
             }
         }
-    }
+    },
 };
