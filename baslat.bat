@@ -1,3 +1,3 @@
 title allah
 echo off
-node minik.js
+node militancc.js
