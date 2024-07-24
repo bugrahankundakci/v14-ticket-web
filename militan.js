@@ -189,6 +189,7 @@ app.get('/messages/:channelId', async (req, res) => {
                     <button onclick="handleButtonClick('rename')">İsim Değiştir</button>
                     <button onclick="handleButtonClick('save')">Ticket Kaydet</button>
                     <button onclick="handleButtonClick('close')">Kapat</button>
+                    <button onclick="handleButtonClick('sendMessage')">Mesaj Gönder</button>
                 </div>
                 ${messages.map(msg => {
                     const user = msg.author;
@@ -237,6 +238,7 @@ app.get('/messages/:channelId', async (req, res) => {
                 <script>
                     async function handleButtonClick(action) {
                         let url;
+                        let message;
                         switch (action) {
                             case 'rename':
                                 const newName = prompt("Yeni kanal adını girin:");
@@ -265,6 +267,17 @@ app.get('/messages/:channelId', async (req, res) => {
                                     body: JSON.stringify({ channelId: '${channelId}' })
                                 });
                                 break;
+                            case 'sendMessage':
+                                message = prompt("Göndermek istediğiniz mesajı girin:");
+                                if (message) {
+                                    url = '/send-message';
+                                    await fetch(url, {
+                                        method: 'POST',
+                                        headers: { 'Content-Type': 'application/json' },
+                                        body: JSON.stringify({ channelId: '${channelId}', message: message })
+                                    });
+                                }
+                                break;
                         }
                         window.location.reload();
                     }
@@ -278,6 +291,7 @@ app.get('/messages/:channelId', async (req, res) => {
         res.status(500).send('Sunucu hatası');
     }
 });
+
 
 
 
@@ -298,6 +312,23 @@ app.post('/rename-channel', async (req, res) => {
     }
 });
 
+
+app.post('/send-message', async (req, res) => {
+    try {
+        const { channelId, message } = req.body;
+        const channel = client.channels.cache.get(channelId);
+
+        if (!channel || channel.type !== ChannelType.GuildText) {
+            return res.status(400).send('Geçersiz kanal ID\'si veya kategori ID\'si.');
+        }
+
+        await channel.send(message);
+        res.sendStatus(200);
+    } catch (error) {
+        console.error('Error sending message:', error);
+        res.status(500).send('Mesaj gönderilemedi.');
+    }
+});
 
 
 app.post('/save-ticket', async (req, res) => {
