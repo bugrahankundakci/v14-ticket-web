@@ -408,9 +408,7 @@ app.post("/save-ticket", async (req, res) => {
             )
             .setColor("Aqua");
 
-        const transcriptsChannel = guild.channels.cache.get(
-            "1263506660765470792"
-        );
+        const transcriptsChannel = guild.channels.cache.get(minik.ticket.transcriptsChannelId);
         if (transcriptsChannel) {
             await transcriptsChannel
                 .send({
