@@ -14,7 +14,9 @@
             "baskaproblemler": "botun ticketleri hangi kategoride açmasını istiyorsan buraya o kategorinin id'sini gir",
             "otherproblemler": "botun ticketleri hangi kategoride açmasını istiyorsan buraya o kategorinin id'sini gir"
         },
-
+        "mesajlar": {
+            "katalog": "Hoşgeldiniz Bilgilendirme :  Ödeme Yöntemleri  \n - Papara \n - Bütün Bankacılıklar | iban \n__Yetkililerimi 15 20 Dakkika İçerisinde Döneceketir__  \n - 5 Dakika İçinde Müşteriden Cevap Gelmezse Ticket Kapancaktır \n Forma fiyatları:\n - 10 Adet 150 ₺  \n- 24 Adet 250 ₺ \n Bütün Hileler 200 ₺  \n Almayacaksanız Bilgilendirin Yoksa Ticket Kapatılır \n Welcome Information: Payment Methods \n Papara \n All Banking \n My Officials Will Return Within 15 20 Minutes \n If There Is No Response From The Customer Within 5 Minutes, The Ticket Will Be Closed"
+        },
         "yetkili": {
             "destekbug": "ticketleri hangi yetkili görmesini istiyorsan onun rol id'sini buraya gir",
             "icproblemler": "ticketleri hangi yetkili görmesini istiyorsan onun rol id'sini buraya gir",
