@@ -188,7 +188,7 @@ app.get('/messages/:channelId', async (req, res) => {
                 <div class="buttons">
                     <button onclick="handleButtonClick('rename')">İsim Değiştir</button>
                     <button onclick="handleButtonClick('save')">Ticket Kaydet</button>
-                    <button onclick="handleButtonClick('close')">Kapat</button>
+                    <button onclick="handleButtonClick('close')">Yenile</button>
                     <button onclick="handleButtonClick('sendMessage')">Mesaj Gönder</button>
                 </div>
                 ${messages.map(msg => {
